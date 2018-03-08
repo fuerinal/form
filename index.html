@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+  <script src="javascripts/javascript.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Form</title>
+</head>
+
+<body>
+  <div id="box">
+
+
+    <div id="box-left" class="animated flipInY">
+
+
+      <div class="form">
+        <div class="title">Contáctanos</div>
+        <hr align="left">
+        <p class="text-top">
+          Te recomendamos que visites nuestro <a href="">blog</a> y te unas a nuestro grupo de <a href="https://es-es.facebook.com/">facebook</a> y <a href="https://twitter.com">twitter</a>
+        </p>
+        <div class="title-form">
+          <span>LLENE ESTE FORMULARIO</span>
+          <span class="required-field"><i class="icon-rectangle"></i>campos requeridos</span>
+          <div></div>
+        </div>
+
+        <form>
+          <div class="input-form-div" id="input-email">
+
+            <input class="input-form" type="text" name="email" aria-required="true" aria-invalid="false" data-rule="email" placeholder="Email">
+            <div class="error" id="emailErrorMessage" aria-hidden="true" role="alert">
+
+            </div>
+            <i class="icon-email"></i><i class="icon-rectangle-input"></i>
+            <span class="focus-border"></span>
+
+          </div>
+          <div class="input-form-div">
+
+            <input class="input-form" type="text" name="name" aria-required="true" aria-invalid="false" data-rule="name" placeholder="Nombre">
+            <div class="error" id="nameErrorMessage" aria-hidden="true" role="alert">
+
+            </div><i class="icon-shape"></i><i class="icon-rectangle-input"></i><span class="focus-border"></span>
+          </div>
+          <div class="input-form-div">
+
+            <input class="input-form" type="text" name="case" aria-required="true" aria-invalid="false" data-rule="case" placeholder="Asunto">
+            <div class="error" id="caseErrorMessage" aria-hidden="true" role="alert">
+
+            </div>
+            <i class="icon-combined-shape"></i><i class="icon-rectangle-input"></i> <span class="focus-border"></span>
+          </div>
+          <div class="input-form-comment">
+
+            <textarea id="input-textarea" cols="10;" rows="20" type="text" aria-required="true" aria-invalid="false" name="comment" data-rule="comment" max="300" placeholder="Descripción"></textarea>
+            <div class="error" id="nameErrorMessage" aria-hidden="true" role="alert">
+
+            </div> <span class="focus-border"></span><i class="icon-comment"></i><i class="icon-rectangle-input"></i>
+
+        </form>
+        </div>
+        <div class="div-rating">
+          <div class="text-rating"><i class="icon-ic-star"></i><span class="text-rating-span">¿Cómo fue tu experiencia? </span></div>
+          <fieldset class="rating">
+            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5"></label>
+            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="4.5"></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4"></label>
+            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="3.5"></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3"></label>
+            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="2.5"></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2"></label>
+            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="1.5"></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1"></label>
+            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="0.5"></label>
+          </fieldset>
+        </div>
+        <div class="div-select">
+          <div class="select-container">
+
+
+            <div class="select">
+              <!-- You can toggle select (disabled) -->
+              <input type="radio" name="option">
+              <i class="toggle icon icon-arrow-down"></i>
+              <i class="toggle icon icon-arrow-up"></i>
+              <span class="placeholder"><span class="text-span-select"><i class="icon-ic-flag"></i>El país</span></span>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Mexico</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i>Chile</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option" >
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i>Colombia</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i>Peru</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Brazil</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Panama</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Ecuador</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Portugal</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Spain</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Argentina</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Dominican Republic</span>
+              </label>
+              <label class="option">
+                  <input  type="radio" name="option">
+                  <span class="title-select animated fadeIn"><i class="icon-ic-flag"></i></i>Uruguay</span>
+              </label>
+            </div>
+          </div>
+          <div class="select">
+
+            <input type="radio" name="option">
+            <i class="toggle icon icon-arrow-down"></i>
+            <i class="toggle icon icon-arrow-up"></i>
+            <span class="placeholder"><i class="icon-rectangle-input"></i><span class="text-span-select"><i class="icon-ic-people   "></i>Departamento</span></span>
+            <label class="option">
+                <input  type="radio" name="option">
+                <span class="title-select animated fadeIn"><i class="icon-ic-people"></i></i>Departamento1</span>
+            </label>
+            <label class="option">
+                <input  type="radio" name="option">
+                <span class="title-select animated fadeIn"><i class="icon-ic-people"></i></i>Departamento2</span>
+            </label>
+            <label class="option">
+                <input  type="radio" name="option">
+                <span class="title-select animated fadeIn"><i class="icon-ic-people"></i></i>Departamento3</span>
+            </label>
+            <label class="option">
+                <input  type="radio" name="option">
+                <span class="title-select animated fadeIn"><i class="icon-ic-people"></i></i>Departamento4</span>
+            </label>
+          </div>
+        </div>
+
+
+        <div class="div-file">
+          <span class="text-input-file"><i class="icon-file"></i><span style = "text-decoration: underline;"></i>Agregue un archivo</span> o coloque archivos aquí</span>
+          <input id="input-file" type="file">
+        </div>
+        <div class="div-input-submit">
+          <input class="input-submit" type="button" value="Envía tu pregunta">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
